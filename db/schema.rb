@@ -11,12 +11,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120417004024) do
+ActiveRecord::Schema.define(:version => 20120417005214) do
 
   create_table "countries", :force => true do |t|
     t.string   "name"
     t.float    "lat"
     t.float    "lng"
+    t.string   "wp_code"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  create_table "languages", :force => true do |t|
+    t.string   "name"
     t.string   "wp_code"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false

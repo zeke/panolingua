@@ -1,4 +1,6 @@
 Panolingua::Application.routes.draw do
+  resources :languages
+
   resources :countries
 
   # The priority is based upon order of creation:
